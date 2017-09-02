@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Yuvraj Sablania - Web Designer & Developer</title>
+    <meta name="description" content="yuvraj sablania | about | web designer & developer" />
+    <meta name="author" content="Yuvraj Sablania">
+    <link rel="shortcut icon" href="img/favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.css">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="css/new-style.css" />
+    <link rel="stylesheet" href="webfonts/ostrich-sans.css" />
+    <script type="text/javascript" src="js/loader.js"></script>
+    <script type="text/javascript" src="js/mobile-menu.js"></script>
+  </head>
+    <body onload="hideloader()" onunload="alert('Thanks for the nice visit');">
+      <!-- Loader -->
+      <div id="loader-bg">
+        <h3>Loading...</h3>
+      <div id="loader"></div>
+      </div>
+
+      <!-- header here -->
+      <header>
+        <a href="index.html"><img src="img/yuvraj-logo-black.png"/></a>
+    <!-- nav here -->
+        <nav>
+          <ul>
+            <li><a href="index.html">WHAT I DO</a></li>
+            <li><a href="work.html">MY WORK</a></li>
+            <li><a href="about.html" class="active">ABOUT</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+          </ul>
+        </nav>
+        <div class="mobile-nav">
+        <i onclick="openNav()" class="icon-menu" style="font-size:28px;"></i>
+        </div>
+      </header>
+
+      <section class="about">
+      <!-- About Section -->
+      <div class="photo">
+        <img src="img/yuvraj.jpg" alt="yuvrajsab">
+      </div>
+      <div class="text-about">
+        <p>
+          My name is <span style="font-weight:bold;">Yuvraj Sablania</span>, an 18 year-old web designer and developer.  Currently, I’m pursuing my bachelors from Maharaja Surajmal Institute under IP University and have a good experience in front-end content production.
+        </p>
+        <p>
+          I’m well-versed in coding mainly in HTML, CSS, and Javascript. But I also have a fair experience in working on Wordpress. I’m very fond of music, movies and animals. Photography and video games are two things I’m passionate about.
+        </p>
+        <h3>Your website will not make itself. Let me help you! I’m open to new projects. Please get in <br /><a href="contact.html">touch!</a></h3>
+      </div>
+      </section>
+
+      <!-- mobile menu -->
+      <div id="mob-menu" >
+        <nav>
+          <ul>
+            <li><a href="index.html">WHAT I DO</a></li>
+            <li><a href="work.html">MY WORK</a></li>
+            <li><a href="about.html" class="active">ABOUT</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+            <li><i onclick="closeNav()" class="icon-close" style="font-size:30px;"></i></li>
+          </ul>
+        </nav>
+      </div>
+
+      <footer>
+        <h5>&copy; 2017 - <a href="mailto:sablaniayuvraj@gmail.com" style="text-decoration:underline;">YS</a></h5>
+      </footer>
+
+    </body>
+</html>

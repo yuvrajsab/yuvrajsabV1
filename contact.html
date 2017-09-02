@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Yuvraj Sablania - Web Designer & Developer</title>
+    <meta name="description" content="yuvraj sablania | contact | web designer & developer" />
+    <meta name="author" content="Yuvraj Sablania">
+    <link rel="shortcut icon" href="img/favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.css">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="css/new-style.css" />
+    <link rel="stylesheet" href="webfonts/ostrich-sans.css" />
+    <script type="text/javascript" src="js/loader.js"></script>
+    <script type="text/javascript" src="js/mobile-menu.js"></script>
+  </head>
+  <body onload="hideloader()" onunload="alert('Thanks for the nice visit');">
+    <!-- Loader -->
+    <div id="loader-bg">
+      <h3>Loading...</h3>
+    <div id="loader"></div>
+    </div>
+
+    <!-- header here -->
+    <header>
+      <a href="index.html"><img src="img/yuvraj-logo-black.png"/></a>
+  <!-- nav here -->
+      <nav>
+        <ul>
+          <li><a href="index.html">WHAT I DO</a></li>
+          <li><a href="work.html">MY WORK</a></li>
+          <li><a href="about.html">ABOUT</a></li>
+          <li><a href="contact.html" class="active">CONTACT</a></li>
+        </ul>
+      </nav>
+      <div class="mobile-nav">
+      <i onclick="openNav()" class="icon-menu" style="font-size:28px;"></i>
+      </div>
+    </header>
+    <section class="contact-me">
+      <!-- Contact me Section -->
+      <h1>TWEET OR EMAIL</h1>
+      <a title="Follow me on Twitter" href="https://twitter.com/yuvraj_sablania" class="twitter-follow-button" data-size="large" data-show-count="false">Follow @yuvraj_sablania</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+      <br />
+      <a class="ghost-button-transition" style="margin:10px;" href="#">EMAIL ME</a>
+
+      <form action="https://formspree.io/sablaniayuvraj@gmail.com" method="post" novalidate>
+        <h3>START WORKING WITH ME</h3>
+        <h2>WHAT ARE YOU WAITING FOR !</h2>
+        <div><input type="text" name="name" required placeholder="Name"/></div>
+        <div><input type="email" name="email" required placeholder="Email" /></div>
+        <div><textarea placeholder="Message" name="message" required aria-required="true" draggable="false"></textarea></div>
+        <div><input type="submit" class="ghost-button-transition" value="SEND"/></div>
+      </form>
+
+      <!-- mobile menu -->
+      <div id="mob-menu" >
+        <nav>
+          <ul>
+            <li><a href="index.html">WHAT I DO</a></li>
+            <li><a href="work.html">MY WORK</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="contact.html" class="active">CONTACT</a></li>
+            <li><i onclick="closeNav()" class="icon-close" style="font-size:30px;"></i></li>
+          </ul>
+        </nav>
+      </div>
+
+      <footer>
+        <h5>&copy; 2017 - <a href="mailto:sablaniayuvraj@gmail.com" style="text-decoration:underline;">YS</a></h5>
+      </footer>
+  </body>
+</html>
