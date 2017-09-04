@@ -252,8 +252,7 @@ main {width: auto;
 }
 
 /* Content */
-.info {text-align: center;
-      width: auto;
+.info {width: auto;
       height: 500px;
       color: black;
       background-color: #fff;
@@ -270,16 +269,20 @@ main {width: auto;
                   -webkit-transition: 500ms ease-in-out;
                   -o-transition: 500ms ease-in-out;
                   transition: 500ms ease-in-out;}
-.content p {text-align: left;
-            padding: 5px 50px;
+.content p {padding: 5px 50px;
             font-weight: normal;
-            font-size: 20px;}
+            font-size: 22px;}
 .content h3 {text-align: left;
             font-weight: bold;
             padding: 0 50px;}
 .content h1 {text-decoration: underline;
+            text-align: center;
             -webkit-text-decoration-style: wavy;
                     text-decoration-style: wavy;}
+.content h1 span {
+  text-decoration: none;
+  font-size:50px;
+}
 
 /* Grid */
 
@@ -599,8 +602,12 @@ form input[type="submit"]:active {
   /* Header */
   header nav {display: none;}
   header {
-    background-color: #fff;
-    z-index: 10;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(255, 255, 255, 0.95);
+    z-index: 15;
     -webkit-box-shadow: 0px 20px 45px rgba(0, 0, 0, 0.1);
             box-shadow: 0px 20px 45px rgba(0, 0, 0, 0.1);
   }
@@ -641,7 +648,8 @@ form input[type="submit"]:active {
 
   /* Hero area */
   main {height: 400px;}
-  .hero-area h1 {font-size: 100px;}
+  .hero-area h1 {font-size: 100px;
+                margin-top: 13%;}
   .content p {padding: 5px 10px;}
   .content h3 {padding: 0 10px;}
   /* Contact */
